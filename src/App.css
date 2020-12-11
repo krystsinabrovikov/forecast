@@ -1,38 +1,194 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+body {
+  background: #55c3ff;
+  font-family: 'Indie Flower', cursive;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  padding: 1rem;
+  font-size: 3.5rem;
+  margin-bottom: .8rem;
+  border-radius: 10px;
+  color: #45ffd4;
+  text-shadow: 2px 2px rgb(249, 249, 249);
+  letter-spacing: 2px;
+  box-shadow: 5px 10px 18px #c2f9ec;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h1:hover {
+  transform: translateY(-7px);
+}
+
+h3 {
+  margin: 1.5rem;
+  padding: 1.5rem;
+  color: #fff;
+  font-size: 1.7rem;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+
+h3:hover {
+  color: #7affe0;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+input {
+  background: #55c3ff;
+  color: #ffff;
+  padding: .6rem;
+  margin: 1rem;
+  border: none;
+  border-bottom: 2px solid;
+  border-radius: 7px;
+}
+
+::placeholder {
+  color: #fff;
+}
+
+input:focus {
+  outline: 0;
+}
+
+button {
+  margin-top:18px;
+  padding: 0 1rem;
+  border: none;
+  border-radius: 7rem;
+  color: #26bb99;
+  background: #fff;
+  font-family: 'Indie Flower', cursive;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+}
+
+button:hover {
+  background: #45ffd4;
+  color: #fff;
+  border: 2px solid #fff;
+  transform: translateY(-7px);
+}
+
+button:focus {
+  outline: 0;
+}
+
+.forecast {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.content {
+  box-shadow: 2px -3px 20px 10px #c2f9ec;
+  border-radius: 15px;
+  text-align: center;
+  width: 500px;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+img {
+  width: 150px;
+}
+
+.forecastPara{
+  margin: 0;
+  letter-spacing: .2rem;
+}
+
+.forecastPara:hover {
+  color: #7affe0;
+  transform: scale(1.5);
+}
+
+span {
+  font-size: 3rem;
+}
+
+.lastPara {
+  margin-bottom: 3rem;
+}
+.footer{
+  text-align: center;
+  color:#ffff;
+  margin-top:10rem;
+  margin-bottom: 3rem;
+}
+.footer p{
+  margin: 0;
+} 
+
+.name {
+  font-size:18px;
+  font-weight: bold;
+  letter-spacing: .1rem;
+}
+
+.name:hover{
+  color: #7affe0;
+  transform: scale(1.5);
+}
+
+@media screen and (max-width:700px) {
+  .heading {
+    padding: .5rem;
+    padding: .7rem;
+    text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  h1 {
+    margin: 1rem;
+    font-size: 3rem;
+  }
+  
+  h3 {
+    font-size: 1.4rem;
+    margin: 1rem;
+  }
+
+  form {
+    flex-direction: column;
+  }
+
+  button {
+    margin-top: 1.2rem;
+    letter-spacing: .5rem;
+  }
+
+  .content {
+    width: 400px;
+    
+  }
+
+  .forecastPara {
+    font-size: 1.2rem;
+    letter-spacing: .2rem;
+  }
+
+  span {
+    font-size: 3rem;
   }
 }
