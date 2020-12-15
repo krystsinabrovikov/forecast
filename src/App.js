@@ -2,11 +2,9 @@ import React from 'react';
 import './App.css';
 import Heading from './components/heading';
 import Form from "./components/form"
-import { render } from '@testing-library/react';
 import Forecast from "./components/forecast"
 import Footer from "./components/footer"
 
-require('dotenv').config()
 const key = process.env.REACT_APP_API_KEY
 
 class App extends React.Component {
